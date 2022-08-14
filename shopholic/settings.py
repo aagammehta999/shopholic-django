@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'accounts',
     'store',
     'carts',
+    'orders',
 ]
 
 MIDDLEWARE = [
@@ -146,3 +147,6 @@ EMAIL_PORT=587
 EMAIL_HOST_USER='ridhikmehra49@gmail.com'
 EMAIL_HOST_PASSWORD='mzeoytvosgzdhmyo'
 EMAIL_USE_TLS=True
+
+RAZORPAY_API_KEY_ID = "rzp_test_Z74vrvrsxQm9hS"
+RAZORPAY_API_KEY_SECRET = "MRhHSmOmv0uUMktqGobmtcZh"
