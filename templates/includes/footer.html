@@ -1,20 +1,84 @@
+<!-- ========================= FOOTER ========================= -->
+{% load static %}
+<footer class="text-center text-white" style="background-color: #f1f1f1;">
+	<!-- Grid container -->
+	<div class="container pt-4">
+	  <!-- Section: Social media -->
+	  <section class="mb-4">
+		<!-- Facebook -->
+		<a
+		  class="btn btn-link btn-floating btn-lg text-dark m-1"
+		  href="#!"
+		  role="button"
+		  data-mdb-ripple-color="dark"
+		  ><i class="fab fa-facebook-f"></i
+		></a>
+  
+		<!-- Twitter -->
+		<a
+		  class="btn btn-link btn-floating btn-lg text-dark m-1"
+		  href="#!"
+		  role="button"
+		  data-mdb-ripple-color="dark"
+		  ><i class="fab fa-twitter"></i
+		></a>
+  
+		<!-- Google -->
+		<a
+		  class="btn btn-link btn-floating btn-lg text-dark m-1"
+		  href="#!"
+		  role="button"
+		  data-mdb-ripple-color="dark"
+		  ><i class="fab fa-google"></i
+		></a>
+  
+		<!-- Instagram -->
+		<a
+		  class="btn btn-link btn-floating btn-lg text-dark m-1"
+		  href="#!"
+		  role="button"
+		  data-mdb-ripple-color="dark"
+		  ><i class="fab fa-instagram"></i
+		></a>
+  
+		<!-- Linkedin -->
+		<a
+		  class="btn btn-link btn-floating btn-lg text-dark m-1"
+		  href="#!"
+		  role="button"
+		  data-mdb-ripple-color="dark"
+		  ><i class="fab fa-linkedin"></i
+		></a>
+		<!-- Github -->
+		<a
+		  class="btn btn-link btn-floating btn-lg text-dark m-1"
+		  href="#!"
+		  role="button"
+		  data-mdb-ripple-color="dark"
+		  ><i class="fab fa-github"></i
+		></a>
+	  </section>
+	  <!-- Section: Social media -->
+	</div>
+	<!-- Grid container -->
+  
+	<!-- Copyright -->
+	<div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+	  © 2020 Copyright:
+	  <a class="text-dark" href="#">Shopholic</a>
+	</div>
+	<!-- Copyright -->
+  </footer>
+<!-- ========================= FOOTER END // ========================= -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.thumb a').click(function(e){
+			e.preventDefault();
+			$('.mainImage img').attr('src', $(this).attr("href"));
+		})
+	})
+</script>
 
-<footer class="section-footer border-top">
-	<div class="container">
-		<section class="footer-bottom border-top row">
-			<div class="col-md-2">
-				<p class="text-muted"> &copy 2022 Shopholic  </p>
-			</div>
-			<div class="col-md-8 text-md-center">
-				<span  class="px-2">info@pixsellz.io</span>
-				<span  class="px-2">+879-332-9375</span>
-				<span  class="px-2">Street name 123, Avanue abc</span>
-			</div>
-			<div class="col-md-2 text-md-right text-muted">
-				<i class="fab fa-lg fa-cc-visa"></i>
-				<i class="fab fa-lg fa-cc-paypal"></i>
-				<i class="fab fa-lg fa-cc-mastercard"></i>
-			</div>
-		</section>
-	</div><!-- //container -->
-</footer>
+</body>
+</html>
