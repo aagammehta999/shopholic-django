@@ -36,7 +36,7 @@ def register(request):
             # Create a user profile
             profile = UserProfile()
             profile.user_id = user.id
-            profile.profile_picture = 'default/default-user.png'
+            profile.profile_picture = 'photo/default/default.jpg'
             profile.save()
 
             # USER ACTIVATION
@@ -156,10 +156,10 @@ def dashboard(request):
     orders_count = orders.count()
 
     userprofile = UserProfile.objects.get(user_id=request.user.id)
-    zm = userprofile.get_profile()
+    
     context = {
         'orders_count': orders_count,
-        'zm': zm,
+        'userprofile': userprofile,
     }
     return render(request, 'accounts/dashboard.html', context)
 
