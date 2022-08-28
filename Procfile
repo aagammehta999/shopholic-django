@@ -1,1 +1,1 @@
-web: gunicorn shopholic.wsgi 
+web: gunicorn shopholic.wsgi --log-file -
